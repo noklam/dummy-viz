@@ -1,0 +1,7 @@
+{
+    "Aggregate": {
+      "r2_score": 0.1111,
+      "r2_score_benchmark": -0.1111,
+      "explained_variance_score": 0.11111,
+    }
+  }

@@ -1,0 +1,90 @@
+2024-02-06 20:19:11,657 - py.warnings - WARNING - /Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/lazy_loader/__init__.py:78: KedroDeprecationWarning: 'CSVDataSet' has been renamed to 'CSVDataset', and the alias will be removed in Kedro-Datasets 2.0.0
+  attr = getattr(submod, name)
+
+2024-02-06 20:19:11,668 - plugin - INFO - Reached after_catalog_created hook
+2024-02-06 20:20:51,220 - py.warnings - WARNING - /Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/lazy_loader/__init__.py:78: KedroDeprecationWarning: 'CSVDataSet' has been renamed to 'CSVDataset', and the alias will be removed in Kedro-Datasets 2.0.0
+  attr = getattr(submod, name)
+
+2024-02-06 20:20:51,226 - plugin - INFO - Reached after_catalog_created hook
+2024-02-06 20:22:35,592 - py.warnings - WARNING - /Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/lazy_loader/__init__.py:78: KedroDeprecationWarning: 'CSVDataSet' has been renamed to 'CSVDataset', and the alias will be removed in Kedro-Datasets 2.0.0
+  attr = getattr(submod, name)
+
+2024-02-06 20:22:35,597 - plugin - INFO - Reached after_catalog_created hook
+2024-02-06 20:22:48,562 - py.warnings - WARNING - /Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/lazy_loader/__init__.py:78: KedroDeprecationWarning: 'CSVDataSet' has been renamed to 'CSVDataset', and the alias will be removed in Kedro-Datasets 2.0.0
+  attr = getattr(submod, name)
+
+2024-02-06 20:22:48,568 - plugin - INFO - Reached after_catalog_created hook
+2024-02-06 20:22:52,692 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/starlette/middleware/base.py", line 108, in __call__
+    response = await self.dispatch_func(request, call_next)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/kedro_viz/api/apps.py", line 42, in set_secure_headers
+    response = await call_next(request)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/kedro_viz/api/rest/router.py", line 41, in get_single_node_metadata
+    return get_node_metadata_response(node_id)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/kedro_viz/api/rest/responses.py", line 342, in get_node_metadata_response
+    return DataNodeMetadata(data_node=node)
+  File "pydantic/main.py", line 339, in pydantic.main.BaseModel.__init__
+  File "pydantic/main.py", line 1074, in pydantic.main.validate_model
+  File "pydantic/fields.py", line 874, in pydantic.fields.ModelField.validate
+  File "pydantic/fields.py", line 1154, in pydantic.fields.ModelField._apply_validators
+  File "pydantic/class_validators.py", line 304, in pydantic.class_validators._generic_validator_cls.lambda4
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/kedro_viz/models/flowchart.py", line 791, in set_tracking_data
+    return cls.data_node.kedro_obj.load()
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/kedro/io/core.py", line 631, in load
+    return super().load()
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/kedro/io/core.py", line 210, in load
+    return self._load()
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/kedro_datasets/json/json_dataset.py", line 130, in _load
+    load_path = get_filepath_str(self._get_load_path(), self._protocol)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/kedro/io/core.py", line 600, in _get_load_path
+    load_version = self.resolve_load_version()
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/kedro/io/core.py", line 593, in resolve_load_version
+    return self._fetch_latest_load_version()
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/cachetools/__init__.py", line 799, in wrapper
+    v = method(self, *args, **kwargs)
+  File "/Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/kedro/io/core.py", line 577, in _fetch_latest_load_version
+    raise VersionNotFoundError(message)
+kedro.io.core.VersionNotFoundError: Did not find any versions for JSONDataset(filepath=/Users/Nok_Lam_Chan/dev/kedro/tmp/dummy-viz/data/08_reporting/dummy.json, protocol=file, save_args={'indent': 2}, version=Version(load=None, save='2024-02-06T20.22.48.560Z'))
+2024-02-06 20:26:22,223 - py.warnings - WARNING - /Users/Nok_Lam_Chan/miniconda3/envs/kedro/lib/python3.10/site-packages/lazy_loader/__init__.py:78: KedroDeprecationWarning: 'CSVDataSet' has been renamed to 'CSVDataset', and the alias will be removed in Kedro-Datasets 2.0.0
+  attr = getattr(submod, name)
+
+2024-02-06 20:26:22,228 - plugin - INFO - Reached after_catalog_created hook
